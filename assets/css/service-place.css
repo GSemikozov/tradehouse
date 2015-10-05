@@ -1,0 +1,254 @@
+ul.service-place-list{
+    /*width:100%;*/
+    background: #ffffff;
+    margin: 10px auto;
+    display: inline-block;
+    padding:0;
+}
+ul.service-place-list li{
+    width: 100%;
+    height: 60px;
+    float:left;
+    display: block;
+    border-bottom: solid 1px #eeeeee;
+}
+ul.service-place-list.inverse-selection{
+    background: #f8f8f8;
+}
+ul.service-place-list li.selected-service-place{
+background: #fff;
+color:#000;
+border-right: 2px solid #10CFBD;
+}
+ul.service-place-list li.selected-service-place div,ul.service-place-list li.selected-service-place div span.sp-title-additional, ul.service-place-list li.selected-service-place div a{
+color:#000;
+text-decoration: none;
+}
+ul.service-place-list li:last-child{
+border-bottom: none;
+}
+ul.service-place-list li:not(.selected-service-place):hover{
+    background: #f8f8f8;
+}
+ul.service-place-list.inverse-selection li:not(.selected-service-place):hover{
+    background: #fff;
+}
+ul.service-place-list li div.dot-liner{
+width:30px;height: 60px;display: block;float:left;
+}
+ul.service-place-list li div.dot-liner img{
+width:30px;height:60px;
+}
+ul.service-place-list li div.thumbnail-wrapper{
+    margin-top: 5px;
+    width: 54px !important;
+    float: left;
+    display: block;
+}
+ul.service-place-list li div.service-place-title{
+    margin-top: 5px;
+    margin-left: 5px;
+    width:calc(100% - 99px);
+    float: left;
+    display: block;
+
+}
+
+ul.service-place-list li div.service-place-title .sp-title{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 37px;
+    width: calc(100% - 25px);
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ul.service-place-list li div.service-place-title .sp-title-additional{
+    color:#333333;
+    font-size:14px;
+    /*line-height: 20px;*/
+    float: left;
+    margin-top: -25px;
+}
+.gmap-holder{
+background: #fff;
+margin: 10px auto;
+padding:10px;
+height: calc(100% - 20px);
+}
+
+.max-height-and-scroll{
+    min-height: 100%;
+    overflow: scroll;
+    height: 100%;
+}
+
+.service-place-logo{
+width:75px;height:75px;display: block;overflow: hidden;
+float: left;
+}
+.service-place-logo img{
+width: 75px;
+text-align: center;
+}
+.service-place-name{
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.service-place-location i{
+    /*color:#10CFBD;
+    font-size:18px;*/
+}
+.service-place-location{
+    margin-top: -12px;
+    display: block;
+    float: left;
+}
+.service-place-photoholder{
+width:100%;
+position: relative;
+display: block;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+li.placeholder{
+width: 100px;
+    height: 100px;
+    display: block;
+    background:#efefef;
+}
+.service-place-photo{
+width: 100px;height: 100px;display: block; position: relative;
+float:left;
+margin:5px;
+}
+.service-place-photo .picture-action-delete{
+display: none;
+}
+.service-place-photo:hover .picture-action-delete{
+    position: absolute;
+    top:5px;
+    right: 1px;
+    display: block;
+    background: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    border:solid 1px #efefef;
+    padding: 5px;
+}
+.service-place-photo:hover .picture-action-delete i{
+
+
+    margin: 0px auto;
+    text-align: center;
+
+    display: block;
+    color: #700707;
+}
+.service-place-photo > img{
+width:100px;
+}
+.service-place-photo:first-child{
+margin: 5px 5px 5px 0px;
+}
+.service-place-photo-upload{
+    width:150px;height:100px;position: relative;
+    display: inline-block;
+    background: #f8f8f8;
+    border: solid 1px #eeeeee;
+    margin-top: 5px;
+    overflow: hidden;
+
+}
+.service-place-photo-upload button h1{
+text-align: center;
+margin-top: 15px;
+}
+.service-place-photo-upload button span{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    display: block;
+    margin-top: -10px;
+}
+.service-place-photo-upload button{
+    color:#000;
+    width: 100%;
+    height: 100%;
+}
+.photo-holder{
+    position: relative;
+    width:100%;
+    display: table;
+}
+.photo-holder .photo-uploader{
+width:96%;
+padding:1%;
+border:solid 1px #efefef;
+height: 200px;
+}
+#ModalPhotoDZ{
+width:100%;height:200px;
+    background: #efefef;
+}
+#modal-photo-upload{
+    width:96%;
+    padding:1%;
+    text-align: center;
+    display: table;
+}
+#modal-photo-upload .dz-message{
+    display: table-cell;
+    vertical-align: middle;
+    font-size:14px;
+    width:100%;
+    float:left;
+}
+#modal-photo-upload .dz-message span span{
+
+}
+.preview-uploaded-images{
+width:100%;position: relative;display: table-cell;
+}
+.preview-uploaded-images .picpreview{
+width:200px;height:200px;display: block;
+    float: left;
+}
+
+.dz-preview{
+width:100px;height:100px;display:block;float:left;
+border: solid 1px #efefef;
+margin-right: 10px;
+margin-top: 10px;
+}
+.dz-details .dz-filename{
+display: none;
+}
+.dz-details .dz-size{
+display: none;
+}
+.dz-progress{
+position: absolute;
+bottom:0px;
+left:0px;
+width:0%;
+height: 2px;
+display: block;
+background: #10CFBD;
+}
+.dz-success-mark, .dz-error-mark, .dz-error-message{
+display: none;
+}
+.dz-message{
+    border: solid 1px #efefef;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.picture-action-delete .service-place-photo-remove{
+position: relative;display: block;
+}

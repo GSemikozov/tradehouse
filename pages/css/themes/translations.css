@@ -1,0 +1,107 @@
+
+#translationsTable tbody tr td .btn {
+    background: #ffffff;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid rgba(44, 44, 44, 0.15);
+    padding: 5px 12px;
+    color: #62605a !important;
+    transition: 3s;
+}
+#translationsTable tbody tr td .btn:hover {
+    background: #00cea0;
+    border: 1px solid transparent;
+}
+#translationsTable tbody tr td .btn:active {
+    background: rgba(44, 44, 44, 0.15);
+}
+
+.column_filter {
+    line-height: 35px;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 0 1px #eeeeee;
+    color: #444444;
+    padding: 0 10px;
+    margin: 0;
+    border: none;
+    transition: 3s;
+}
+.column_filter:focus {
+    background: #eeeeee;
+    color: #222222;
+}
+.visible {
+    display: block !important;
+}
+#filter-button {
+    transition: 3s;
+    border-radius: 0;
+}
+.filter-content {
+    display: block;
+    text-align: center;
+}
+.translate-input {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eeeeee;
+    padding: 15px;
+    color: #0e0e0e;
+    background: transparent;
+}
+.header-button {
+    text-align: center;
+    width: auto !important;
+    margin: 0;
+    padding: 6px 43px;
+    display: inline-block;
+}
+.dataTables_scroll {
+    border-top: 1px solid #eeeeee !important;
+}
+table.dataTable thead td {
+    border-bottom: none;
+    padding: 15px 5px;
+}
+table.dataTable thead td:nth-child(3) {
+    padding-left: 15px;
+}
+.thead-text {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 400px) {
+    .languages {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .languages-wrapper {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .header-button {
+        margin: 5px 5px 5px 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .languages {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .languages-wrapper {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .header-button {
+        margin: 5px 5px 5px 0;
+    }
+}
+@media screen and (min-width: 692px) {
+    .languages-wrapper {
+        padding-right: 15px;
+        padding-top: 0;
+    }
+}

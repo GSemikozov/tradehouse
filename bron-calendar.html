@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <!-- <link class="" href="pages/css/themes/calendar.css" rel="stylesheet" type="text/css" /> -->
+    <link class="" href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 9]>
+        <link href="pages/css/ie9.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript">
+    window.onload = function()
+    {
+      // fix for windows 8
+      if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
+        document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="pages/css/windows.chrome.fix.css" />'
+    }
+    </script>
+  </head>
+  <body class="fixed-header no-header  ">
+
+    <!-- START PAGE-CONTAINER -->
+    <div class="page-container bg-white full-height">
+      <!-- START MOBILE CONTROLS -->
+      <!-- LEFT SIDE -->
+
+      <!-- RIGHT SIDE -->
+      <div class="top-right overlayer visible-sm visible-xs">
+        <!-- START ACTION BAR -->
+        <div class="p-r-5 p-t-15">
+          <button class="btn-link" data-toggle="quickview" data-toggle-element="#quickview">
+            <span class="icon-set menu-hambuger-plus"></span>
+          </button>
+        </div>
+        <!-- END ACTION BAR -->
+      </div>
+      <!-- END MOBILE CONTROLS -->
+      <!-- START PAGE CONTENT WRAPPER -->
+      <div class="page-content-wrapper full-height">
+        <!-- START PAGE CONTENT -->
+        <div class="content full-width full-height">
+
+          <!-- some more content here -->
+          <BR><BR><BR><B><BR><BR><BR><BR><BR></B>
+
+          <!-- START CALENDAR -->
+
+            <div class="calendar new-calendar-header">
+            <!-- service items -->
+            <div class="row cusomer-service-item-groups">
+                <div class="col-sm-4 col-xs-12 service-item" serviceGroupId="1">
+                    <ul class="service-item-list">
+                        <li>
+                            <span class="title">Juukse pesemine Kerastase teenindus midagi pikka siia</span>
+                            <span class="lenprice">30 min / 15.65 €</span>
+                            <span class="action">
+                                <span class="glyphicon glyphicon-remove removeServiceFromServiceGroup" serviceid="0"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="title">Juukse varvimine</span>
+                            <span class="lenprice">30 min / 15.65 €</span>
+                            <span class="action">
+                                <span class="glyphicon glyphicon-remove removeServiceFromServiceGroup" serviceid="0"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="title">Juukse loikamine</span>
+                            <span class="lenprice">30 min / 15.65 €</span>
+                            <span class="action">
+                                <span class="glyphicon glyphicon-remove removeServiceFromServiceGroup" serviceid="0"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-xs-12 service-item" serviceGroupId="2">
+                    <ul class="service-item-list">
+                        <li>
+                            <span class="title">Manikuur</span>
+                            <span class="lenprice">30 min / 15.65 €</span>
+                            <span class="action">
+                                <span class="glyphicon glyphicon-remove removeServiceFromServiceGroup" serviceid="0"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="title">Varvimine</span>
+                            <span class="lenprice">30 min / 15.65 €</span>
+                            <span class="action">
+                                <span class="glyphicon glyphicon-remove removeServiceFromServiceGroup" serviceid="0"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="options">
+                    <div class="months-drager drager">
+                        <div class="months" id="months" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <div class="month"><a href="#" class="month-selector " data-month="1">January</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="2">February</a></div>
+                            <div class="month"><a href="#" class="month-selector active" data-month="3">March</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="4">April</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="5">May</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="6">June</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="7">July</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="8">August</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="9">Septermber</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="10">October</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="11">November</a></div>
+                            <div class="month"><a href="#" class="month-selector " data-month="12">December</a></div>
+                        </div>
+                    </div>
+                    <div class="drager week-dragger">
+                        <div class="weeks-wrapper" id="weeks-wrapper" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <div class="week"><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sun</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="1">1</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Mon</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="2">2</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Tue</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="3">3</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Wed</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="4">4</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Thu</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="5">5</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Fri</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="6">6</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sat</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="7">7</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sun</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="8">8</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Mon</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="9">9</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Tue</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="10">10</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Wed</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="11">11</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Thu</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="12">12</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Fri</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="13">13</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sat</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="14">14</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sun</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="15">15</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Mon</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="16">16</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Tue</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="17">17</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Wed</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="18">18</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Thu</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="19">19</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Fri</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="20">20</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sat</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="21">21</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sun</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="22">22</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Mon</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="23">23</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Tue</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="24">24</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Wed</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="25">25</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Thu</div></div><div class="week-date active"><div class="day"><a href="#" class="day-selector" data-date="26">26</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Fri</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="27">27</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sat</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="28">28</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Sun</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="29">29</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Mon</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="30">30</a></div></div></div><div class="day-wrapper date-selector"><div class="week-day"><div class="day week-header">Tue</div></div><div class="week-date"><div class="day"><a href="#" class="day-selector" data-date="31">31</a></div></div></div></div>
+                        </div>
+
+                </div>
+            </div>
+                    <div class="new-calendar-wrapper">
+                            <div class="grid new-calendar calendar-step-15min" id="newCalendar">
+                                <div class="calendar-time">
+                                    <div class="col-sm-12 head-line">&nbsp;</div>
+                                    <div class="col-sm-12">08:00</div>
+                                    <div class="col-sm-12 time-quarter">08:15</div>
+                                    <div class="col-sm-12">08:30</div>
+                                    <div class="col-sm-12 time-quarter">08:45</div>
+                                    <div class="col-sm-12">09:00</div>
+                                    <div class="col-sm-12 time-quarter">09:15</div>
+                                    <div class="col-sm-12">09:30</div>
+                                    <div class="col-sm-12 time-quarter">09:45</div>
+                                    <div class="col-sm-12">10:00</div>
+                                    <div class="col-sm-12 time-quarter">10:15</div>
+                                    <div class="col-sm-12">10:30</div>
+                                    <div class="col-sm-12 time-quarter">10:45</div>
+                                    <div class="col-sm-12">11:00</div>
+                                    <div class="col-sm-12 time-quarter">11:15</div>
+                                    <div class="col-sm-12">11:30</div>
+                                    <div class="col-sm-12 time-quarter">11:45</div>
+                                    <div class="col-sm-12">12:00</div>
+                                    <div class="col-sm-12 time-quarter">12:15</div>
+                                    <div class="col-sm-12">12:30</div>
+                                    <div class="col-sm-12 time-quarter">12:45</div>
+                                    <div class="col-sm-12">13:00</div>
+                                    <div class="col-sm-12 time-quarter">13:15</div>
+                                    <div class="col-sm-12">13:30</div>
+                                    <div class="col-sm-12 time-quarter">13:45</div>
+                                    <div class="col-sm-12">14:00</div>
+                                    <div class="col-sm-12 time-quarter">14:15</div>
+                                    <div class="col-sm-12">14:30</div>
+                                    <div class="col-sm-12 time-quarter">14:45</div>
+                                </div>
+                            </div>
+                            <div class="calendar-loader" id="calendar-loader">
+                                <i class="fa fa-spinner fa-spin fa-lg"></i>
+                            </div>
+                    </div>
+                    <!-- old style calendar -->
+
+                    <!-- move this js to other place -->
+                    <script language="javascript">
+                        var customerServices = new Array(); /* Stores all cusomer services in array */
+                        var customerTotals = new Array();
+                        /* this should be filled up already on calendar block display */
+                        /* But for testing - will be done ajax request on .document.ready() */
+
+
+                        var calendarDayNubmer = 7; /* By default on computers it displays 7 days, on ipad>=768px - 5 days, <768px - 3 days, on mobile - 1 day */
+                        var currentMonth = 3; /* defined from php */
+                        var currentDay = 26;  /* defined from php */
+                        var currentActiveSlot = undefined;
+
+
+                        document.addEventListener( "DOMContentLoaded", function() {
+                            document.removeEventListener("DOMContentLoaded", arguments.callee, false);
+
+                            var calendarOffset =  jQuery('.calendar-time > .head-line').offset();
+
+                            var calendarOffsetTop = calendarOffset.top;
+
+                            var w = window.innerWidth;
+
+                            if(w>989){
+                                //do nothing
+                            }else if(w>768 && w<989){
+                                calendarDayNubmer = 5;
+                            }else if(w<768 && w>420){
+                                calendarDayNubmer = 3;
+                            }else{
+                                calendarDayNubmer = 1;
+                            }
+                            jQuery(window).scroll(function(){
+                                if (jQuery(window).scrollTop() >= calendarOffsetTop) {
+                                    jQuery('.head-line').addClass('fixed-position');
+                                    jQuery('.calendar-arrow-left').addClass('fixed-position');
+                                    jQuery('.calendar-arrow-right').addClass('fixed-position');
+                                }else{
+                                    jQuery('.head-line').removeClass('fixed-position');
+                                    jQuery('.calendar-arrow-left').removeClass('fixed-position');
+                                    jQuery('.calendar-arrow-right').removeClass('fixed-position');
+                                }
+                            }).resize(function(){
+                                w = window.innerWidth;
+                                var currentDayNumber = calendarDayNubmer;
+                                if(w>989){
+                                    //do nothing
+                                    calendarDayNubmer = 7;
+                                }else if(w>768 && w<989){
+                                    calendarDayNubmer = 5;
+                                }else if(w<768 && w>420){
+                                    calendarDayNubmer = 3;
+                                }else{
+                                    calendarDayNubmer = 1;
+                                }
+
+                                if(currentDayNumber!=calendarDayNubmer){
+                                    loadCalendar();
+                                }
+
+                                calendarOffset =  jQuery('.calendar-time > .head-line').offset();
+
+                                calendarOffsetTop = calendarOffset.top;
+                            });
+
+                            jQuery(document).ready(function () {
+
+                                /* Month/Week/Day slider */
+                                $('.drager').scrollbar();
+                                $('.drager').each(function(index){
+                                    var myElement = document.getElementById($(this).children().attr('id'));
+                                    var hammertime = new Hammer(myElement);
+                                    var element = $(this);
+                                    var lP = element.scrollLeft();
+                                    var inverseX;
+                                    hammertime.on('panmove', function(ev) {
+                                        inverseX = -(ev.deltaX);
+                                        element.scrollLeft(inverseX + lP);
+                                        //lP=0;
+                                    });
+                                    hammertime.on('panend pancancel', function(ev) {
+                                        lP = element.scrollLeft();
+                                    })
+                                });
+
+
+
+                                $('.month-selector').on('click',function(){
+                                    $('.month-selector').removeClass('active');
+                                    $(this).addClass('active');
+                                    buildDays($(this).attr('data-month'));
+                                    currentMonth = $(this).attr('data-month');
+                                });
+
+                                /* Scroll day selector to current date */
+                                var currentdatePosition = $('.week-date.active').offset();
+                                $('.week-dragger',$(document)).scrollLeft(0+(currentdatePosition.left));
+                                console.log(currentdatePosition.left);
+                                loadCalendar();
+
+
+                                /* JUST FOR TESTING AND GETTING SERVICES RANDOMLY !!! */
+                                $.ajax({dataType:'json',url:'randService.php',data:{services:1},success:function(response){
+                                    $.each(response['services'],function(key,val){
+                                        customerServices.push(val);
+                                    });
+
+                                    customerTotals['len'] = response['totalLen'];
+                                    customerTotals['price'] = response['totalPrice'];
+                                }
+                                });
+
+                                $(document).on('click','#reservationConfirmation',function(){
+                                   alert($(this).attr('date')+' at '+$(this).attr('time'));
+                                }).on('click','.removeService',function(){
+
+                                    $(this).parent().parent().slideUp(function(){
+                                        $(this).remove();
+                                        removeServiceFromModal($(this).attr('serviceId'));
+                                    });
+                                }).on('click','.day-selector',function() {
+                                    $('.week-date',$(document)).removeClass('active');
+                                    $(this).parent().parent().addClass('active');
+                                    currentDay = $(this).attr('data-date');
+                                    loadCalendar($(this).attr('data-date'));
+
+                                }).on('mouseenter','.time-line',function(){
+                                    var $el = jQuery(this);
+                                    if($el.hasClass('calendar-disabled')){
+                                        //do nothing
+                                    }else {
+                                        //remove selectedColumnAndRow from other items
+                                        $('.time-line', $(document)).removeClass('selectedColumnAndRow');
+                                        $('.cal-' + $el.attr('date'), $(document)).not('.calendar-column, .calendar-disabled').addClass('selectedColumnAndRow');
+                                        $('.cal-' + $el.attr('time'), $(document)).not('.calendar-column, .calendar-disabled').addClass('selectedColumnAndRow');
+                                        $el.not('.active, .calendar-disabled').html('Vali seda aega');
+                                    }
+
+                                }).on('mouseleave','.time-line',function(){
+                                    if($(this).hasClass('calendar-disabled')){
+                                        //do nothing
+                                    }else {
+                                        jQuery(this).not('.active').html('');
+                                    }
+                                }).on('click','.time-line',function(e){
+                                        if($(this).hasClass('calendar-disabled')){
+                                            //cant choose time that is already booked
+                                        }else {
+                                            console.log("is it clicking?" + $(e.target).attr('class'));
+                                            if ($(e.target).hasClass('removeService')) {
+
+                                            } else {
+                                                jQuery('.time-line').removeClass('active selectedColumnAndRow');
+
+                                                var $currentElement = jQuery(this);
+
+                                                if (currentActiveSlot == undefined) {
+                                                    currentActiveSlot = $currentElement;
+                                                } else {
+                                                    if ($currentElement != currentActiveSlot) {
+                                                        //currentActiveSlot.remove()
+                                                        $('.my-reservation-popup', currentActiveSlot).remove();
+                                                        currentActiveSlot = $currentElement;
+                                                    }
+                                                }
+                                                $currentElement.addClass('active');
+                                                $currentElement.addClass('delayed');
+                                                var currentElementPosition = $currentElement.offset();
+                                                if ($('.new-calendar').innerWidth() < currentElementPosition.left + 360) {
+                                                    //pre-built div wrapper per cell item
+                                                    $currentElement.html('<div class="my-reservation-popup positioned-from-right" id="cell-' + $currentElement.attr('date') + '' + $currentElement.attr('time') + '">' + buildReservationModal($currentElement.attr('datestamp'), $currentElement.attr('time'), $currentElement.attr('formatedDate'), $currentElement.attr('formatedTime')) + '</div>');
+                                                } else {
+                                                    //pre-built div wrapper per cell item
+                                                    $currentElement.html('<div class="my-reservation-popup" id="cell-' + $currentElement.attr('date') + '' + $currentElement.attr('time') + '">' + buildReservationModal($currentElement.attr('datestamp'), $currentElement.attr('time'), $currentElement.attr('formatedDate'), $currentElement.attr('formatedTime')) + '</div>');
+                                                }
+
+                                                $currentElement.on('click', '.closeModal', function () {
+                                                    //$currentElement.remove();
+                                                    $('.my-reservation-popup', $currentElement).remove();
+                                                    $currentElement.removeClass('active');
+                                                });
+                                            }
+                                        }
+
+                                }).on('click','.service-item',function(){
+                                    $('.service-item').removeClass('active');
+                                    $(this).addClass('active');
+                                }).on('click','.removeServiceFromServiceGroup',function(){
+                                    var $curLi = $(this).parent().parent();
+                                    var $curLiParent = $curLi.parent();
+                                    $curLi.slideUp(function(){
+                                        $(this).remove();
+                                        removeServiceFromModal($(this).attr('serviceId'));
+
+                                        console.log($curLiParent.attr('class')+' found lis:'+$('li',$curLiParent).length);
+                                        if($('li',$curLiParent).length==0){
+                                            console.log("no li found anymore");
+                                            $curLiParent.parent().remove();
+                                        }
+                                    });
+
+                                });
+
+                            });/*/$(document).ready() */
+
+                        }); /*/Bind DOMloaded */
+
+                        function buildReservationModal(date,time,formatedDate,formatedTime){
+                         output = '<h4 class="pull-left padding-sides-10" id="reservationDate">'+formatedDate+' '+formatedTime+'</h4>';
+                            output+='<h4 class="pull-right padding-sides-10"><a class="closeModal"><span class="glyphicon glyphicon-remove"></span></a></h4>';
+                            output+='<div class="clearfix"></div>';
+                            output+='<ul class="my-reservation-services" id="reservationServices">';
+                            $.each(customerServices,function(k,v) {
+                                output += '<li>';
+                                output += '<span class="title">'+v.name+'</span>';
+                                output += '<span class="lenprice">'+v.len+' / '+ v.price+'</span>';
+                                output += '<span class="action"><span class="glyphicon glyphicon-remove removeService" serviceId="'+k+'"></span></span>';
+                                output += '</li>';
+                            });
+
+                            output +='</ul>'
+                            output +='<div class="totalBlock pull-right padding-sides-10">';
+                            output +='<h4 id="reservationTotal">'+customerTotals['len']+' min. / '+customerTotals['price']+' &euro;</h4>';
+                            output +='<button id="reservationConfirmation" class="btn btn-default btn-rounded full-width" date="'+date+'" time="'+time+'">Kinnita</button>';
+                            output +='</div>';
+                            return output;
+                        }
+                        function removeServiceFromModal(serviceId){
+                            //Ajax with update for service list and totals.
+                            //totals can be updated like that
+
+                            $('#reservationTotal').html('123 min / 2314 &euro;');
+                        }
+
+                        function buildDays(monthNumber){
+
+                            $.ajax({dataType:'JSON',url:'randService.php',data:{monthChange:monthNumber},success:function(response){
+                            var resultedDays = '';
+                                $.each(response,function(k,v){
+                                    resultedDays+='<div class="day-wrapper date-selector">' +
+                                    '<div class="week-day">' +
+                                    '<div class="day week-header">'+v+'</div>' +
+                                    '</div>' +
+                                    '<div class="week-date">' +
+                                    '<div class="day"><a href="#" class="day-selector" data-date="'+k+'">'+k+'</a></div>' +
+                                    '</div>' +
+                                    '</div>';
+
+                                });
+                                $('#weeks-wrapper').html('<div class="week">'+resultedDays+'</div>');
+                            }
+                            });
+                        }
+
+                        function loadCalendar(){
+                            $.ajax({type:'GET',url:'randService.php',data:{currentDate:currentDay,currentMonth:currentMonth,daysNumber:calendarDayNubmer},success:function(response){
+                                //delete all calendar columns
+                                $('.calendar-column').remove();
+                                $('#newCalendar').append(response);
+                                $('#calendar-loader').addClass('hidden');
+                            }
+                            });
+                        }
+
+                    </script>
+                    <!--/move this js to other place -->
+
+                    <!-- END CALENDAR GRID-->
+                    <!--/old calendar -->
+
+
+                <!-- END CALENDAR -->
+
+
+
+        <!-- END PAGE CONTENT -->
+      </div>
+      <!-- END PAGE CONTENT WRAPPER -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+
+    <!-- BEGIN VENDOR JS -->
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui-touch/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/moment/moment-with-locales.min.js"></script>
+
+    <script src="assets/plugins/hammer.min.js"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="pages/js/pages.min.js"></script>
+
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS -->
+  </body>
+</html>
